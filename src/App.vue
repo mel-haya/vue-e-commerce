@@ -3,10 +3,16 @@
     <nav>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
+      <textarea id="a" name="" cols="30" rows="10"></textarea>
     </nav>
     <router-view />
   </div>
 </template>
+
+<script>
+const a = 'hello'
+console.log(a)
+</script>
 
 <style lang="scss">
 #app {
