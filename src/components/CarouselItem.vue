@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-full h-full">
+  <div class="flex w-full h-full absolute">
     <div
       class="w-1/2 flex flex-col items-end justify-center bg-purple-100/20 text-white gap-3 p-5"
     >
@@ -11,7 +11,7 @@
       </button>
     </div>
     <div class="w-1/2 flex justify-center items-center">
-      <img :src="item.image" alt="iphone" />
+      <img :src="item.image" class="max-h-[400px]" alt="iphone" />
     </div>
   </div>
 </template>
