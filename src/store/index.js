@@ -1,15 +1,18 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import cartModule from './cart'
-import productModule from './products'
-import userModule from './user'
+import cart from './cart'
+import product from './products'
+import user from './user'
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
+const store = new Vuex.Store({
   state: {},
   getters: {},
   mutations: {},
   actions: {},
-  modules: { cartModule, productModule, userModule },
+  modules: { cart, product, user },
 })
+
+export default store
+export const useStore = () => store

@@ -5,7 +5,7 @@ const cartModule = {
     }
   },
   getters: {
-    getLength(state) {
+    getCartCount(state) {
       return state.items.length
     },
   },

@@ -1,5 +1,5 @@
 <template>
-  <div id="caroussel" class="w-[90%] overflow-hidden relative">
+  <div id="caroussel" class="grow overflow-hidden relative">
     <Transition>
       <CarouselItem :key="items[index].id" :item="items[index]" />
     </Transition>

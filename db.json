@@ -1,0 +1,104 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Apple iPhone XS, 5.8\" , 64Go - Gold",
+      "displayName": "Apple iPhone XS",
+      "brand": "Apple",
+      "category": "Smartphone",
+      "rating": 4.6,
+      "price": 455,
+      "oldPrice": 700,
+      "images": [
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/04/279514/2.jpg?1087",
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/04/279514/1.jpg?1087",
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/04/279514/3.jpg?1087"
+      ],
+      "description": "a high-end smartphone with a 5.8-inch Super Retina OLED display, dual 12-megapixel rear cameras, and a 7-megapixel front-facing camera. It is powered by Apple's A12 Bionic chip and features Face ID for secure authentication. The iPhone XS also includes water resistance, wireless charging, and supports iOS updates for several years.",
+      "featured": false
+    },
+    {
+      "id": 2,
+      "name": "Apple iPhone 14 Pro Max 256GB Violet Intense 6,7\" Deep Purple 6Gb RAM",
+      "displayName": "Apple iPhone 14 Pro Max",
+      "brand": "Apple",
+      "category": "Smartphone",
+      "rating": 4.8,
+      "price": 1700,
+      "oldPrice": 2100,
+      "images": [
+        "https://ma.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/04/161285/1.jpg?1486",
+        "https://ma.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/04/161285/7.jpg?1486",
+        "https://ma.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/04/161285/8.jpg?1486"
+      ],
+      "description": "An unprecedented and magical way to interact with your iPhone. An essential security feature designed to save lives. An innovative 48 Mpx camera for breathtaking levels of detail. And all the power of the ultimate smartphone chip.",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "name": "Apple MacBook Air 2020 M1 Chip, 13 pouces, 8 Go RAM, 256 Go Stockage SSD",
+      "brand": "Apple",
+      "displayName": "MacBook Air 2020 M1 Chip",
+      "category": "Laptop",
+      "rating": 3.8,
+      "price": 1399,
+      "oldPrice": 2050,
+      "images": [
+        "https://ma.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/91/555604/1.jpg?5435",
+        "https://ma.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/91/555604/2.jpg?5435",
+        "https://ma.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/91/555604/3.jpg?5435"
+      ],
+      "description": "The Apple MacBook Air 2020 with M1 chip is a lightweight and portable laptop with a 13.3-inch Retina display, Apple's M1 chip for exceptional performance and battery life of up to 18 hours. It also features a Magic Keyboard with scissor mechanism for a comfortable typing experience, Touch ID for secure authentication, and up to 16GB of RAM.",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "name": "Microsoft surface Laptop 3-13.3\"Tactile-i5 1035G7-128 SSD-8GB-Azerty-Win10Pro",
+      "brand": "Microsoft",
+      "displayName": "Microsoft surface Laptop",
+      "category": "Laptop",
+      "rating": 4.2,
+      "price": 900,
+      "oldPrice": 1199,
+      "images": [
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/99/369904/1.jpg?1466",
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/99/369904/2.jpg?1466",
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/99/369904/3.jpg?1466"
+      ],
+      "description": "a premium laptop with a slim and sleek design. It features a high-resolution touchscreen display, a comfortable keyboard, and a powerful processor, making it ideal for both personal and professional use",
+      "featured": true
+    },
+    {
+      "id": 5,
+      "name": "Jaouda - Lait Uht Entier 6x500ml",
+      "brand": "Jaouda",
+      "displayName": "Lait Uht Entier 6x500ml",
+      "category": "Accessories",
+      "rating": 4.8,
+      "price": 33,
+      "oldPrice": 36,
+      "images": [
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/42/619173/1.jpg?1019"
+      ],
+      "description": "Milk",
+      "featured": true
+    },
+    {
+      "id": 6,
+      "name": "Apple iPad Pro M1 12,9 Pouces 128GB Wi-Fi Silver Sidéral Bluetooth 5 iOS Siri 5ᵉ Génération",
+      "brand": "Apple",
+      "displayName": "Apple iPad Pro",
+      "category": "Smartphone",
+      "rating": 4.5,
+      "price": 1199,
+      "oldPrice": 1499,
+      "images": [
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/21/178416/1.jpg?7245",
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/21/178416/2.jpg?7245",
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/21/178416/3.jpg?7245"
+      ],
+      "description": "The Apple iPad Pro is a powerful and versatile tablet with a large, high-resolution touchscreen display. It supports the use of the Apple Pencil and Magic Keyboard, making it a popular choice for artists and professionals. With its premium design and advanced features, the iPad Pro is suitable for a variety of uses, from entertainment to productivity.",
+      "featured": true
+    }
+  ]
+}
