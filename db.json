@@ -39,7 +39,7 @@
       "name": "Apple MacBook Air 2020 M1 Chip, 13 pouces, 8 Go RAM, 256 Go Stockage SSD",
       "brand": "Apple",
       "displayName": "MacBook Air 2020 M1 Chip",
-      "category": "Laptop",
+      "category": "Laptops",
       "rating": 3.8,
       "price": 1399,
       "oldPrice": 2050,
@@ -56,7 +56,7 @@
       "name": "Microsoft surface Laptop 3-13.3\"Tactile-i5 1035G7-128 SSD-8GB-Azerty-Win10Pro",
       "brand": "Microsoft",
       "displayName": "Microsoft surface Laptop",
-      "category": "Laptop",
+      "category": "Laptops",
       "rating": 4.2,
       "price": 900,
       "oldPrice": 1199,
@@ -81,7 +81,7 @@
         "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/42/619173/1.jpg?1019"
       ],
       "description": "Milk",
-      "featured": true
+      "featured": false
     },
     {
       "id": 6,
@@ -99,6 +99,99 @@
       ],
       "description": "The Apple iPad Pro is a powerful and versatile tablet with a large, high-resolution touchscreen display. It supports the use of the Apple Pencil and Magic Keyboard, making it a popular choice for artists and professionals. With its premium design and advanced features, the iPad Pro is suitable for a variety of uses, from entertainment to productivity.",
       "featured": true
+    },
+    {
+      "id": 7,
+      "name": "Apple AirPods 3rd Genaration- Blanc",
+      "brand": "Apple",
+      "displayName": "Apple AirPods",
+      "category": "Accessories",
+      "rating": 4,
+      "price": 149,
+      "oldPrice": 300,
+      "images": [
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/42/308916/1.jpg?7300",
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/42/308916/2.jpg?7300",
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/42/308916/3.jpg?7300"
+      ],
+      "description": "The Apple AirPods have reached their third generation. These true wireless earbuds offer a more compact design and a battery life of up to six hours with a maximum of 30 hours when recharged using their charging case, which is now compatible with Qi and MagSafe technologies for recharging.",
+      "featured": true
+    },
+    {
+      "id": 8,
+      "name": "Santa Monica Studio God of War PS4",
+      "brand": "Santa Monica Studio",
+      "displayName": "God of War PS4",
+      "category": "Gaming",
+      "rating": 5,
+      "price": 349,
+      "oldPrice": 400,
+      "images": [
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/27/418225/1.jpg?5462",
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/27/418225/2.jpg?5462",
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/27/418225/3.jpg?5462"
+      ],
+      "description": "God of War[b] is an action-adventure game developed by Santa Monica Studio and published by Sony Interactive Entertainment. It was released for the PlayStation 4 in April 2018, with a Windows port in January 2022. The game is the eighth installment in the God of War series.",
+      "featured": true
+    },
+    {
+      "id": 9,
+      "name": "Sony Ps5 + Jeu God Of War Ragnarok P5 Version Digital",
+      "brand": "Sony",
+      "displayName": "Playstation 5",
+      "category": "Gaming",
+      "rating": 4.5,
+      "price": 789,
+      "oldPrice": 879,
+      "images": [
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/50/901026/1.jpg?7028",
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/50/901026/2.jpg?7028",
+        "https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/50/901026/3.jpg?7028"
+      ],
+      "description": "God of War[b] is an action-adventure game developed by Santa Monica Studio and published by Sony Interactive Entertainment. It was released for the PlayStation 4 in April 2018, with a Windows port in January 2022. The game is the eighth installment in the God of War series.",
+      "featured": true
     }
+  ],
+  "carouselItems": [
+    {
+      "id": 2,
+      "name": "Iphone 14 Pro",
+      "description": "From $999 or $41.62/mo. for 24 mo. before trade-in*",
+      "image": "https://i.ibb.co/FDnjHpG/iphone.png",
+      "price": 999
+    },
+    {
+      "id": 6,
+      "name": "Ipad Pro",
+      "description": "12.9”Liquid Retina XDR display. Best and brightest.",
+      "image": "https://i.ibb.co/KsVCjZs/ipad.png",
+      "price": 1299
+    },
+    {
+      "id": 3,
+      "name": "Macbook air",
+      "description": "MacBook Air with M1 is an incredibly portable laptop.",
+      "image": "https://i.ibb.co/BrL64r7/macbook.png",
+      "price": 1699
+    }
+  ],
+  "categories": [
+    {
+      "displayName": "Computers and Laptops",
+      "name": "Laptops"
+    },
+    {
+      "displayName": "Mobile Devices",
+      "name": "Smartphone"
+    },
+    {
+      "displayName": "Accessories",
+      "name": "Accessories"
+    },
+    {
+      "displayName": "Gaming",
+      "name": "Gaming"
+    }
+
   ]
 }

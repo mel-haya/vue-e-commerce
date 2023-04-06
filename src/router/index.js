@@ -4,6 +4,7 @@ import HomeView from '../views/LandingView.vue'
 import ProductView from '../views/ProductView.vue'
 import NotFoundView from '../views/NotFoundView.vue'
 import CartView from '../views/CartView'
+import StoreView from '../views/StoreView'
 
 Vue.use(VueRouter)
 
@@ -22,6 +23,11 @@ const routes = [
     path: '/cart',
     name: 'cart',
     component: CartView,
+  },
+  {
+    path: '/store/:category?',
+    name: 'store',
+    component: StoreView,
   },
   {
     path: '*',

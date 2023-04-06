@@ -7,11 +7,14 @@
       >
         <h2 class="text-4xl p-2">Categories</h2>
         <ul class="flex flex-col gap-2">
-          <li>Computers and Laptops</li>
-          <li>Mobile Devices</li>
-          <li>Accessories</li>
-          <li>Gaming</li>
-          <li>Software</li>
+          <li
+            :key="categorie.displayName"
+            v-for="categorie in store.state.product.categories"
+          >
+            <router-link :to="`/store/${categorie.name}`">{{
+              categorie.displayName
+            }}</router-link>
+          </li>
         </ul>
       </div>
     </div>
@@ -29,33 +32,18 @@
 <script setup>
 import Carousel from '../components/carouselComponent.vue'
 import ProductCard from '../components/productCard.vue'
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { useStore } from '@/store'
+import axios from 'axios'
 
 const store = useStore()
-const items = ref([
-  {
-    id: 2,
-    name: 'Iphone 14 Pro',
-    description: 'From $999 or $41.62/mo. for 24 mo. before trade-in*',
-    image: require('@/assets/images/iphone.png'),
-    price: 999,
-  },
-  {
-    id: 6,
-    name: 'Ipad Pro',
-    description: '12.9”Liquid Retina XDR display. Best and brightest.',
-    image: require('@/assets/images/ipad.png'),
-    price: 1299,
-  },
-  {
-    id: 3,
-    name: 'Macbook air',
-    description: 'MacBook Air with M1 is an incredibly portable laptop.',
-    image: require('@/assets/images/macbook.png'),
-    price: 1699,
-  },
-])
+
+const items = ref([])
+onMounted(() => {
+  axios.get('http://localhost:3000/carouselItems').then((res) => {
+    items.value = res.data
+  })
+})
 </script>
 
 <style scoped>

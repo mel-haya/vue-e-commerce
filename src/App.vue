@@ -4,11 +4,11 @@
       class="h-[10%] flex justify-between p-4 items-center bg-gray-900/50"
     >
       <router-link to="/">
-        <h1 class="text-5xl tracking-wider font-bold">ATech</h1>
+        <h1 class="golden-text text-5xl tracking-wider font-bold">ATech</h1>
       </router-link>
       <nav>
         <ul class="flex text-xl mx-4 text-white gap-10">
-          <li>Store</li>
+          <li><router-link to="/store">Store</router-link></li>
           <li>Sign up</li>
           <li>
             <router-link class="relative" to="/cart">
@@ -48,10 +48,7 @@ body {
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   font-family: Cairo, sans-serif;
 }
-</style>
-
-<style scoped>
-h1 {
+.golden-text {
   background-color: #e8c99b;
   background-image: linear-gradient(315deg, #e8c99b 0%, #e8bc85 74%);
   -webkit-background-clip: text;

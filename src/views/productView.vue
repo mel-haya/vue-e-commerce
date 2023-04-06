@@ -34,7 +34,7 @@
           {{ product.rating }}<i class="fa-solid fa-star text-[#d2a41b]"></i>
         </p>
         <p class="lg:w-2/3">{{ product.description }}</p>
-        <CartButton :product="product" />
+        <CartButton class="mt-2" :product="product" />
       </div>
     </div>
   </div>

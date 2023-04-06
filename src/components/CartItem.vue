@@ -27,7 +27,7 @@
     </td>
     <td class="px-5 align-center">
       <div class="flex justify-center">
-        <div class="flex border rounded-lg overflow-hidden border-gray-400">
+        <div class="flex border rounded-lg overflow-hidden">
           <button
             @click="emit('decQuantity', item.id)"
             class="bg-gray-200 px-2"

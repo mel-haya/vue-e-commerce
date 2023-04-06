@@ -8,9 +8,6 @@
       <router-link :to="`/product/${item.id}`" class="underline">
         more details
       </router-link>
-      <button class="py-2 px-5 bg-blue-700 text-white rounded-md">
-        Add to cart
-      </button>
     </div>
     <div class="w-1/2 flex justify-center items-center">
       <img :src="item.image" class="max-h-[400px]" alt="iphone" />
