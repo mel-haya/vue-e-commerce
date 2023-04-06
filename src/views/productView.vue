@@ -34,9 +34,7 @@
           {{ product.rating }}<i class="fa-solid fa-star text-[#d2a41b]"></i>
         </p>
         <p class="lg:w-2/3">{{ product.description }}</p>
-        <button class="mt-4 py-2 px-5 bg-blue-700 text-white rounded-md">
-          Add to cart
-        </button>
+        <CartButton :product="product" />
       </div>
     </div>
   </div>
@@ -49,22 +47,6 @@ import { useRoute } from 'vue-router/composables'
 // import { useRoute } from 'vue-router/composables'
 const store = useStore()
 const route = useRoute()
-// const product = ref({
-//   id: 55566,
-//   name: 'Apple iPhone XS, 5.8" , 64Go - Gold',
-//   brand: 'Apple',
-//   category: 'Smartphone',
-//   rating: 4.6,
-//   price: 455,
-//   oldPrice: 700,
-//   images: [
-//     'https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/04/279514/1.jpg?1087',
-//     'https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/04/279514/2.jpg?1087',
-//     'https://ma.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/04/279514/3.jpg?1087',
-//   ],
-//   description:
-//     "a high-end smartphone with a 5.8-inch Super Retina OLED display, dual 12-megapixel rear cameras, and a 7-megapixel front-facing camera. It is powered by Apple's A12 Bionic chip and features Face ID for secure authentication. The iPhone XS also includes water resistance, wireless charging, and supports iOS updates for several years.",
-// })
 let product = ref({})
 
 const selectedImg = ref('')

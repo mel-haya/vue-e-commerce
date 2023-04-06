@@ -2,6 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import CartButton from './components/global/CartButton'
+
+Vue.component('CartButton', CartButton)
 
 Vue.config.productionTip = false
 

@@ -10,7 +10,17 @@
         <ul class="flex text-xl mx-4 text-white gap-10">
           <li>Store</li>
           <li>Sign up</li>
-          <li><i class="fa-brands fa-opencart"></i></li>
+          <li>
+            <router-link class="relative" to="/cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p
+                v-if="cartCount"
+                class="bg-red-500 top-0 -translate-y-1/2 translate-x-1/2 right-0 flex justify-center absolute items-center text-sm w-[20px] h-[20px] rounded-full"
+              >
+                {{ cartCount }}
+              </p>
+            </router-link>
+          </li>
         </ul>
       </nav>
     </header>
@@ -19,10 +29,11 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, computed } from 'vue'
 import { useStore } from './store/index'
 
 const store = useStore()
+const cartCount = computed(() => store.getters.getCartCount)
 onMounted(async () => {
   await store.dispatch('initProducts')
 })
