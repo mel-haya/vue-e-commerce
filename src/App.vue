@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="flex flex-col">
+  <div id="app" class="flex flex-col relative pb-[64px]">
     <header
       class="h-[10vh] flex justify-between p-4 items-center bg-gray-900/50"
     >
@@ -25,7 +25,9 @@
       </nav>
     </header>
     <router-view />
-    <footer class="p-5 bg-black/50 text-white">SQLI 2023</footer>
+    <footer class="p-5 bg-black/50 text-white absolute bottom-0 w-full">
+      SQLI 2023
+    </footer>
   </div>
 </template>
 
