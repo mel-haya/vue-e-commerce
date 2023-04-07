@@ -7,6 +7,7 @@ import CartView from '../views/CartView'
 import StoreView from '../views/StoreView'
 import LoginView from '../views/LoginView'
 import CheckoutView from '../views/CheckoutView'
+import { auth } from '@/firebase'
 
 Vue.use(VueRouter)
 
@@ -40,6 +41,9 @@ const routes = [
     path: '/checkout',
     name: 'checkout',
     component: CheckoutView,
+    meta: {
+      requiresAuth: true,
+    },
   },
   {
     path: '*',
@@ -52,6 +56,16 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes,
+})
+
+router.beforeEach(async (to, from, next) => {
+  const requiresAuth = to.matched.some((record) => record.meta.requiresAuth)
+  console.log(auth.currentUser)
+  if (requiresAuth && !auth.currentUser) {
+    next('/login')
+  } else {
+    next()
+  }
 })
 
 export default router

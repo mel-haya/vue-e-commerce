@@ -1,14 +1,17 @@
 const userModule = {
   state: () => {
     return {
-      uuid: '',
-      picture: '',
-      name: '',
+      currUser: null,
     }
   },
   getters: {
-    getLength(state) {
-      return state.items.length
+    getUser(state) {
+      return state.currUser
+    },
+  },
+  mutations: {
+    setUser(state, user) {
+      state.currUser = user
     },
   },
 }

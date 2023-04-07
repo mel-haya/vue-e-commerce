@@ -9,7 +9,12 @@
       <nav>
         <ul class="flex text-xl mx-4 text-white gap-10">
           <li><router-link to="/store">Store</router-link></li>
-          <li><router-link to="/login">Sign up</router-link></li>
+          <li v-if="!store.getters.getUser">
+            <router-link to="/login">Sign up</router-link>
+          </li>
+          <li v-else>
+            <p class="cursor-pointer" @click="logoutUser">Logout</p>
+          </li>
           <li>
             <router-link class="relative" to="/cart">
               <i class="fa-solid fa-cart-shopping"></i>
@@ -34,12 +39,27 @@
 <script setup>
 import { onMounted, computed } from 'vue'
 import { useStore } from './store/index'
+import { logout, auth } from '@/firebase'
+import { useRouter } from 'vue-router/composables'
+import { onAuthStateChanged } from 'firebase/auth'
 
 const store = useStore()
+const router = useRouter()
 const cartCount = computed(() => store.getters.getCartCount)
 onMounted(async () => {
+  onAuthStateChanged(auth, (user) => {
+    store.commit('setUser', user)
+  })
+  console.log(auth.currentUser)
   await store.dispatch('initProducts')
 })
+
+function logoutUser() {
+  logout().then(() => {
+    store.commit('setUser', null)
+    router.push('/')
+  })
+}
 </script>
 
 <style>

@@ -1,38 +1,26 @@
 <template>
-  <div class="grid grid-cols-4">
-    <div class="col-span-3 flex flex-col bg-white p-5">
-      <h1 class="text-xl font-bold">Checkout</h1>
+  <div class="grid grid-cols-4 m-10">
+    <div class="col-span-2 flex rounded-lg flex-col bg-white p-5">
+      <h1 class="text-xl font-bold">Payment details</h1>
       <form @submit.prevent="submitOrder" class="flex flex-col gap-2">
-        <label for="name">Name:</label>
-        <input type="text" id="name" v-model="name" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" v-model="email" required />
-
-        <label for="address">Address:</label>
-        <input type="text" id="address" v-model="address" required />
-        <div class="flex">
-          <div class="flex-1 flex gap-2 items-center">
-            <label for="city">City:</label>
-            <input type="text" id="city" v-model="city" required />
-          </div>
-          <div class="flex-1 flex gap-2 items-center">
-            <label for="state">State:</label>
-            <input type="text" id="state" v-model="state" required />
-          </div>
-          <div class="flex-1 flex gap-2 items-center">
-            <label for="zip">Zip code:</label>
-            <input type="text" id="zip" v-model="zip" required />
-          </div>
-        </div>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" v-model="fullName" required />
+        <label for="card">Card number:</label>
+        <input type="text" id="card" v-model="card" required />
         <div class="flex items-center gap-2">
-          <label for="card">Credit card number:</label>
-          <input type="text" id="card" v-model="card" required />
-
-          <label for="exp">Expiration date:</label>
-          <input type="text" id="exp" v-model="exp" required />
+          <div class="flex flex-col">
+            <label for="exp">Expiration Month:</label>
+            <input type="text" id="exp" v-model="exp" required />
+          </div>
+          <div class="flex flex-col">
+            <label for="exp">Expiration Year:</label>
+            <input type="text" id="exp" v-model="exp" required />
+          </div>
+          <div class="flex flex-col">
+            <label class="flex flex-cole" for="exp">CVC:</label>
+            <input type="text" id="exp" v-model="exp" required />
+          </div>
         </div>
-
         <button
           class="self-start bg-blue-600 py-2 px-5 text-white rounded-md"
           type="submit"
