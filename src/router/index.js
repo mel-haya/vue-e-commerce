@@ -6,6 +6,7 @@ import NotFoundView from '../views/NotFoundView.vue'
 import CartView from '../views/CartView'
 import StoreView from '../views/StoreView'
 import LoginView from '../views/LoginView'
+import CheckoutView from '../views/CheckoutView'
 
 Vue.use(VueRouter)
 
@@ -34,6 +35,11 @@ const routes = [
     path: '/login',
     name: 'login',
     component: LoginView,
+  },
+  {
+    path: '/checkout',
+    name: 'checkout',
+    component: CheckoutView,
   },
   {
     path: '*',

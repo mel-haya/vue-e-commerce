@@ -36,9 +36,11 @@
           class="bg-gray-100 w-1/6 p-4 flex flex-col justify-end gap-2 items-end"
         >
           <p class="text-xl">Total amount: {{ total }}$</p>
-          <button class="bg-green-600 text-white px-5 py-2 rounded">
-            Checkout
-          </button>
+          <router-link to="/checkout">
+            <button class="bg-green-600 text-white px-5 py-2 rounded">
+              Checkout
+            </button>
+          </router-link>
         </div>
       </div>
     </div>
