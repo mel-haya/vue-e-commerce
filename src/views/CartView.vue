@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full flex justify-center">
+  <div class="w-full grow flex justify-center">
     <div class="m-10 w-full rounded-md p-5 bg-white">
       <h2 class="font-semibold text-2xl">My cart</h2>
       <div v-if="!items.length" class="flex justify-center">

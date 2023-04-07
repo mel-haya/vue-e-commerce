@@ -25,6 +25,7 @@
       </nav>
     </header>
     <router-view />
+    <footer class="p-5 bg-black/50 text-white">SQLI 2023</footer>
   </div>
 </template>
 

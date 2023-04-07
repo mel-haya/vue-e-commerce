@@ -1,7 +1,7 @@
 <template>
-  <main class="h-screen">
+  <main class="grow">
     <div class="md:h-1/2 flex">
-      <Carousel :items="items" class="hidden md:block" />
+      <Carousel :items="items" class="hidden md:block h-[50vh]" />
       <div
         class="flex flex-col w-full md:w-[20%] items-center from-gray-900/70 to-gray-900/10 bg-gradient-to-b text-white"
       >
