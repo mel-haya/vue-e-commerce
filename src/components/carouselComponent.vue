@@ -22,6 +22,7 @@ const props = defineProps({
   items: {
     type: Array,
     required: true,
+    default: () => [],
   },
 })
 const index = ref(0)

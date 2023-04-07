@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
+  <div id="app" class="flex flex-col">
     <header
-      class="h-[10%] flex justify-between p-4 items-center bg-gray-900/50"
+      class="h-[10vh] flex justify-between p-4 items-center bg-gray-900/50"
     >
       <router-link to="/">
         <h1 class="golden-text text-5xl tracking-wider font-bold">ATech</h1>
@@ -9,7 +9,7 @@
       <nav>
         <ul class="flex text-xl mx-4 text-white gap-10">
           <li><router-link to="/store">Store</router-link></li>
-          <li>Sign up</li>
+          <li><router-link to="/login">Sign up</router-link></li>
           <li>
             <router-link class="relative" to="/cart">
               <i class="fa-solid fa-cart-shopping"></i>
