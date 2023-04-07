@@ -41,15 +41,11 @@ import { onMounted, computed } from 'vue'
 import { useStore } from './store/index'
 import { logout, auth } from '@/firebase'
 import { useRouter } from 'vue-router/composables'
-import { onAuthStateChanged } from 'firebase/auth'
 
 const store = useStore()
 const router = useRouter()
 const cartCount = computed(() => store.getters.getCartCount)
 onMounted(async () => {
-  onAuthStateChanged(auth, (user) => {
-    store.commit('setUser', user)
-  })
   console.log(auth.currentUser)
   await store.dispatch('initProducts')
 })
