@@ -1,5 +1,11 @@
 import { initializeApp } from 'firebase/app'
-import { getFirestore } from 'firebase/firestore'
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  doc,
+  getDoc,
+} from 'firebase/firestore'
 import { getAuth, createUserWithEmailAndPassword, signOut } from 'firebase/auth'
 
 const firebaseConfig = {
@@ -28,4 +34,24 @@ export const createUser = async (email, password) => {
 
 export const logout = async () => {
   await signOut(auth)
+}
+
+export async function getCollection(name) {
+  const products = await getDocs(collection(db, name))
+  const res = []
+  products.forEach((doc) => {
+    res.push({
+      id: doc.id,
+      ...doc.data(),
+    })
+  })
+  return res
+}
+
+export async function getProductById(id) {
+  const productRef = await getDoc(doc(db, 'products', id))
+  return {
+    id: productRef.id,
+    ...productRef.data(),
+  }
 }

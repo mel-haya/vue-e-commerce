@@ -5,7 +5,7 @@
     >
       <h2 class="text-4xl font-bold">{{ item.name }}</h2>
       <p>{{ item.description }}</p>
-      <router-link :to="`/product/${item.id}`" class="underline">
+      <router-link :to="`/product/${item.productId}`" class="underline">
         more details
       </router-link>
     </div>

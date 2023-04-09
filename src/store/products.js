@@ -1,5 +1,6 @@
 import axios from 'axios'
 const API_URL = 'http://localhost:3000'
+import { getCollection } from '@/firebase'
 
 const product = {
   state: () => {
@@ -36,10 +37,8 @@ const product = {
   },
   actions: {
     async initProducts(context) {
-      let res = await axios.get(API_URL + '/products')
-      context.state.items = res.data
-      res = await axios.get(API_URL + '/categories')
-      context.state.categories = res.data
+      context.state.items = await getCollection('products')
+      context.state.categories = await getCollection('categories')
     },
     async fetchProduct(context, id) {
       const res = await axios.get(`${API_URL}/products/${id}`)

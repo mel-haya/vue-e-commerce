@@ -42,10 +42,9 @@
 
 <script setup>
 import { onMounted, ref } from 'vue'
-import { useStore } from '../store'
 import { useRoute } from 'vue-router/composables'
+import { getProductById } from '@/firebase'
 // import { useRoute } from 'vue-router/composables'
-const store = useStore()
 const route = useRoute()
 let product = ref({})
 
@@ -55,8 +54,7 @@ const selectedImg = ref('')
 
 onMounted(async () => {
   const id = route.params.id
-  await store.dispatch('fetchProduct', id)
-  product.value = store.state.product.currProduct
+  product.value = await getProductById(id)
   selectedImg.value = product.value.images[0]
 })
 </script>

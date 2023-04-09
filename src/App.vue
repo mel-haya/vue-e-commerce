@@ -39,14 +39,13 @@
 <script setup>
 import { onMounted, computed } from 'vue'
 import { useStore } from './store/index'
-import { logout, auth } from '@/firebase'
+import { logout } from '@/firebase'
 import { useRouter } from 'vue-router/composables'
 
 const store = useStore()
 const router = useRouter()
 const cartCount = computed(() => store.getters.getCartCount)
 onMounted(async () => {
-  console.log(auth.currentUser)
   await store.dispatch('initProducts')
 })
 

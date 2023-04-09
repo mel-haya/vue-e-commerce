@@ -34,15 +34,13 @@ import Carousel from '../components/carouselComponent.vue'
 import ProductCard from '../components/productCard.vue'
 import { onMounted, ref } from 'vue'
 import { useStore } from '@/store'
-import axios from 'axios'
+import { getCollection } from '@/firebase'
 
 const store = useStore()
 
 const items = ref([])
-onMounted(() => {
-  axios.get('http://localhost:3000/carouselItems').then((res) => {
-    items.value = res.data
-  })
+onMounted(async () => {
+  items.value = await getCollection('carouselItems')
 })
 </script>
 
