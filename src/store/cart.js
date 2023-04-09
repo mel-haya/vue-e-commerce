@@ -31,6 +31,9 @@ const cartModule = {
       const index = state.cartItems.findIndex((p) => p.id === id)
       if (index !== -1) state.cartItems[index].quantity--
     },
+    emptyCart(state) {
+      state.cartItems = []
+    },
   },
 }
 
