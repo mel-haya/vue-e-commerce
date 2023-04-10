@@ -50,8 +50,6 @@ let product = ref({})
 
 const selectedImg = ref('')
 
-// const route = useRoute()
-
 onMounted(async () => {
   const id = route.params.id
   product.value = await getProductById(id)
