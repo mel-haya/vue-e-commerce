@@ -8,10 +8,3 @@ npm install
 ```
 npm run serve
 ```
-
-### Run Json-server
-```
-json-server --watch db.json
-```
-
-
