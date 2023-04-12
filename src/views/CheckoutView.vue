@@ -51,7 +51,7 @@ const expMonth = ref('')
 const expYear = ref('')
 const CVC = ref('')
 
-const errMessage = ref('Hello')
+const errMessage = ref('')
 const total = computed(() => store.getters.getTotalPrice)
 function submitOrder() {
   if (/^[A-Za-z\s]{5,}$/.test(fullName.value) === false) {
@@ -70,7 +70,7 @@ function submitOrder() {
     errMessage.value = 'Invalid expiration year'
     return
   }
-  if (/^\d{3}$/.test(card.value) === false) {
+  if (/^\d{3}$/.test(CVC.value) === false) {
     errMessage.value = 'CVC must contain 3 digits'
     return
   }
